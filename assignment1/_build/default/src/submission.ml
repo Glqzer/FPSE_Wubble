@@ -1,8 +1,8 @@
 (*
   FPSE Assignment 1
 
-  Name                  :
-  List of Collaborators :
+  Name                  : David Wang
+  List of Collaborators : Emma Levitsky
 
   Please make a good faith effort at listing people you discussed any problems with here, as per the course academic integrity policy.  CAs/Prof need not be listed!
 
@@ -39,15 +39,20 @@ let unimplemented () =
 (*
   Given a non-negative integer `n`, compute `0+1+2+ ... +n` using recursion (don't use the closed-form solution, do the actual addition).
 *)
-let summate (n: int) : int =
-  unimplemented ()
+let rec summate (n: int) : int = match n with
+  | 0 -> 0 
+  | 1 -> 1 
+  | n -> n + summate(n - 1);;
 
 (*
   Given non-negative integers `n` and `m`, compute their least common multiple.
 *)
-let lcm (n: int) (m: int) : int =
-  unimplemented ()	
-
+let rec gcd (a: int) (b: int) : int = match a, b with
+  |_, 0 -> a
+  |n, m -> gcd b (a mod b);;
+  
+let lcm (n: int) (m: int) : int = 
+  (n * m) / (gcd n m);;
 (*
   Given a non-negative integer `n`, compute the n-th fibonacci number.	Give an implementation that does not take exponential time; the naive version from lecture is exponential	since it has two recursive calls for each call.
 *)
@@ -57,32 +62,41 @@ let fibonacci (n: int) : int =
 (*
   Given non-negative integers `a` and `b`, where `a` is not greater than `b`, produce a list [a; a+1; ...; b-1].
 *)
-let range (a : int) (b : int) : int list =
-  unimplemented ()
+let rec range (a : int) (b : int) : int list = match a - b with
+  | -1 -> [a]
+  | x -> range a (b - 1) @ [b - 1];;
 
 (*
   Given non-negative integers `n`, `d`, and `k`, produce the arithmetic progression [n; n + d; n + 2d; ...; n + (k-1)d].
 *)
-let arithmetic_progression (n : int) (d : int) (k : int) : int list =
-  unimplemented ()
+let rec arithmetic_progression (n : int) (d : int) (k : int) : int list = match k with
+  | 1 -> [n]
+  | k -> arithmetic_progression n d (k - 1) @ [n + (k - 1) * d];;
 
 (*
   Given a positive integer `n`, produce the list of integers in the range (0, n] which it is divisible by, in ascending order.
 *)
-let factors (n: int) : int list =
-  unimplemented ()
+let rec loop (n: int) (m: int) : int list = 
+  if m = 0 then []
+  else if n mod m = 0 then loop n (m - 1) @ [m]
+  else loop n (m - 1);;
+let factors (n: int) : int list = 
+  loop n n;;
 
 (* 
   Reverse a list. Your solution must be in O(n) time. Note: the solution in lecture is O(n^2).
 *)
-let reverse (ls : 'a list) : 'a list =
-  unimplemented ()
+let rec reverse (ls : 'a list) : 'a list = match ls with 
+  | x :: xs -> reverse(xs) @ [x]
+  | [] -> [];;
 
 (*
   Given a list of strings, check to see if it is ordered, i.e. whether earlier elements are less than or equal to later elements.
 *)
-let is_ordered (ls: string list) : bool =
-  unimplemented ()
+let rec is_ordered (ls: string list) : bool = match ls with 
+  | [] -> true
+  | a :: b :: xs -> if String.compare a b = 1 then false else is_ordered (b :: xs)
+  | a :: [] -> true;;
 
 (*
   Given a string and a list of strings, insert the string into the list so that if the list was originally ordered, then it remains ordered. Return as a result the list with the string inserted.
@@ -91,8 +105,14 @@ let is_ordered (ls: string list) : bool =
 
 	Note this is an example of a *functional data structure*, instead of mutating	you return a fresh copy with the element added.
 *)
-let insert_string (s: string) (ls: string list) : (string list, string) result =
-	unimplemented ()
+let rec insert_string (s: string) (ls: string list) : (string list, string) result =
+  if not (is_ordered ls) then Error "insert into unordered list" else match ls with 
+    | [] -> Ok([s])
+    | a :: xs -> if String.compare a s = 1 
+        then Ok([s] @ xs) 
+        else match insert_string s xs with 
+          | Error e -> Error e
+          | Ok xs -> Ok (a :: xs)
 
 (*
 	Define a function to sort a list of strings by a functional version of the insertion sort method: repeatedly invoke insert_string to add elements one by one to an initially empty list.
