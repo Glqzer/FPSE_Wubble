@@ -109,10 +109,10 @@ let rec insert_string (s: string) (ls: string list) : (string list, string) resu
   if not (is_ordered ls) then Error "insert into unordered list" else match ls with 
     | [] -> Ok([s])
     | a :: xs -> if String.compare a s = 1 
-        then Ok([s] @ xs) 
+        then Ok([s] @ ls)
         else match insert_string s xs with 
           | Error e -> Error e
-          | Ok xs -> Ok (a :: xs)
+          | Ok xs -> Ok (a :: xs);;
 
 (*
 	Define a function to sort a list of strings by a functional version of the insertion sort method: repeatedly invoke insert_string to add elements one by one to an initially empty list.
