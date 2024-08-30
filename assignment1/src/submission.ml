@@ -29,9 +29,9 @@ open Core
 (*
   Here is a simple function which gets passed unit, (), as argument and raises an exception. It is the initial implementation of all functions below.
 *)
-let unimplemented () =
+(*let unimplemented () =
 	failwith "unimplemented"
-
+*)
 (*
 	All functions must be total for the specified domain;	overflow is excluded from this restriction but should be avoided.
 *)
@@ -53,23 +53,34 @@ let rec gcd (a: int) (b: int) : int = match a, b with
   
 let lcm (n: int) (m: int) : int = 
   (n * m) / (gcd n m);;
+
+(* 
+  Helper for fibonacci
+*)
+let rec fibonacci_helper (n: int) (x: int) (y: int) : int = match n with 
+  | 0 -> x
+  | a -> fibonacci_helper (n - 1) y (x + y)
+
+
 (*
   Given a non-negative integer `n`, compute the n-th fibonacci number.	Give an implementation that does not take exponential time; the naive version from lecture is exponential	since it has two recursive calls for each call.
 *)
-let fibonacci (n: int) : int =
-  unimplemented ()
+let fibonacci (n: int) : int = 
+  fibonacci_helper n 0 1
 
 (*
   Given non-negative integers `a` and `b`, where `a` is not greater than `b`, produce a list [a; a+1; ...; b-1].
 *)
 let rec range (a : int) (b : int) : int list = match a - b with
   | -1 -> [a]
+  | 0 -> []
   | x -> range a (b - 1) @ [b - 1];;
 
 (*
   Given non-negative integers `n`, `d`, and `k`, produce the arithmetic progression [n; n + d; n + 2d; ...; n + (k-1)d].
 *)
 let rec arithmetic_progression (n : int) (d : int) (k : int) : int list = match k with
+  | 0 -> []
   | 1 -> [n]
   | k -> arithmetic_progression n d (k - 1) @ [n + (k - 1) * d];;
 
@@ -83,12 +94,18 @@ let rec loop (n: int) (m: int) : int list =
 let factors (n: int) : int list = 
   loop n n;;
 
+(*
+  Helper for reversing a list, with 2 data structures rather than 1.
+*)
+let rec reverse_help(ex : 'a list) (ls : 'a list) = match ls with 
+  | [] -> ex
+  | x :: xs -> reverse_help (x :: ex) xs;;
+
 (* 
   Reverse a list. Your solution must be in O(n) time. Note: the solution in lecture is O(n^2).
 *)
-let rec reverse (ls : 'a list) : 'a list = match ls with 
-  | x :: xs -> reverse(xs) @ [x]
-  | [] -> [];;
+let reverse (ls : 'a list) : 'a list =
+  reverse_help [] ls;;
 
 (*
   Given a list of strings, check to see if it is ordered, i.e. whether earlier elements are less than or equal to later elements.
@@ -115,14 +132,32 @@ let rec insert_string (s: string) (ls: string list) : (string list, string) resu
           | Ok xs -> Ok (a :: xs);;
 
 (*
+  Helper for Insertion Sort Function
+*)
+let rec insertion_helper (ls: string list) (em: string list) : string list = match ls with 
+  | [] -> em
+  | x :: xs -> match insert_string x em with 
+        | Error e -> em
+        | Ok a -> insertion_helper xs a;;
+
+(*
 	Define a function to sort a list of strings by a functional version of the insertion sort method: repeatedly invoke insert_string to add elements one by one to an initially empty list.
 
 	The sorted list should be sorted from smallest to largest string lexicographically.
 *)
 let insertion_sort (ls: string list) : string list =
-	unimplemented ()
+  insertion_helper ls [];;
 
   
+(*
+  Helper function for splitting a list recursively
+*)
+let rec split_list_helper (ls : 'a list) (ex : 'a list) (n : int) : 'a list * 'a list =
+  match ls, ex, n with 
+  | [], _, _ -> ex, ls
+  | _, _, 0 -> ex, ls
+  | x :: xs, a, n -> split_list_helper xs (a @ [x]) (n - 1)
+
 (* 
   Split a list `ls` into two pieces, the first of which is the first `n` elements of `ls`,
   and the second is all remaining elements.
@@ -134,10 +169,40 @@ let insertion_sort (ls: string list) : string list =
   Assume `n` is non-negative and at most the length of the list.
 *)
 let split_list (ls : 'a list) (n : int) : 'a list * 'a list =
-  unimplemented ()
+  split_list_helper ls [] n
+ 
+
+(*
+  Helper function for merge_sort for merging lists
+*)
+let rec merge_helper (a : 'a list) (b : 'a list) : 'a list = 
+  match a, b with 
+  | c, []
+  | [], c -> c
+  | d :: e, f :: g -> if d <= f then d :: (merge_helper e b)
+    else f :: (merge_helper a g)
+
+(*
+    Helper function to find length of a list
+*)
+let rec list_length (a : 'a list) : int =
+  match a with 
+  | [] -> 0
+  | b :: xs -> 1 + list_length xs
 
 (* 
   Sort an int list using merge sort. Your solution must have time complexity O(n log n). Note that time complexity may depend on your implementation of `split_list`.
 *)
-let merge_sort (ls : int list) = 
-  unimplemented ()
+let rec merge_sort (ls : int list) = 
+  match ls with 
+  | [] -> ls
+  | a :: [] -> ls
+  | _ -> 
+    let length = list_length ls in
+    let middle = length / 2 in
+    let left, right = split_list ls middle in
+    let sorted_left = merge_sort left in
+    let sorted_right = merge_sort right in
+    merge_helper sorted_left sorted_right;;
+
+
