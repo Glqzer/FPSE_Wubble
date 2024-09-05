@@ -1,0 +1,37 @@
+
+(library
+  (name reimplementation_tests)
+  (modules reimplementation_tests)
+  (libraries
+    reimplementation
+    ounit2
+    core))
+
+(library
+  (name primes_tests)
+  (modules primes_tests)
+  (libraries
+    primes
+    ounit2
+    core))
+
+(library
+  (name towers_tests)
+  (modules towers_tests)
+  (libraries
+    towers
+    ounit2
+    core))
+
+(test
+  (name tests)
+  (modules tests)
+  (libraries
+    reimplementation_tests
+    primes_tests
+    towers_tests
+    reimplementation
+    primes
+    towers
+    core
+    ounit2))

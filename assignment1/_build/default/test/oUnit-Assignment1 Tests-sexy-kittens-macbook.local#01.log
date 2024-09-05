@@ -1,0 +1,18 @@
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:0:Integer tests:0:Summate is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:0:Integer tests:2:Fib is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:1:List creation tests:1:Arith. prog. is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:1:List creation tests:3:Reverse is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:2:Sort tests:1:Insert string is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:2:Sort tests:3:Split list is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:2:Sort tests:3:Split list.

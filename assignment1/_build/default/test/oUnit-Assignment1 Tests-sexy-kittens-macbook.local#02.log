@@ -1,0 +1,18 @@
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:0:Integer tests:1:LCM is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:1:List creation tests:0:Range is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:1:List creation tests:2:Factors is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:0:Is ordered is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:2:Insertion sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:4:Merge sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:4:Merge sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:4:Merge sort.

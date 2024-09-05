@@ -1,0 +1,18 @@
+
+(library
+  (name reimplementation)
+  (modules reimplementation)
+  (libraries
+    core))
+
+(library
+  (name primes)
+  (modules primes)
+  (libraries
+    core))
+
+(library
+  (name towers)
+  (modules towers)
+  (libraries
+    core))

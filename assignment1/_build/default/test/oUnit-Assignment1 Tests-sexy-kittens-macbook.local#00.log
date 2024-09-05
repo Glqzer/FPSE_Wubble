@@ -1,0 +1,140 @@
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Runner: processes
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Chooser: simple
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration suite_name = "Assignment1 Tests"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration cache_filename = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/FPSE_Wubble/assignment1/_build/default/test/oUnit-$(suite_name).cache"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration run_gc_full_major = "true"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration display = "true"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration results_style_1_X = "false"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration testdata_dir = "none"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration health_check_interval = "1."
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration verbose = "false"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration chooser = "simple"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration output_html_dir = "none"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_kill_period = "5."
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration runner = "processes"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration shards = "2"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_grace_period = "5."
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration log_encoding = "utf-8"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration output_junit_file = "none"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration ci = "false"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Configuration output_file = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/FPSE_Wubble/assignment1/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Using 2 workers maximum.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#01.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 started.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#02.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 started.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:1:LCM, Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:1:LCM, Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:1:LCM, Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:0:Integer tests:0:Summate is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:1:LCM, Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:1:LCM, Assignment1 Tests:0:Integer tests:0:Summate.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:2:Fib, Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:2:Fib, Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:0:Integer tests:1:LCM is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:2:Fib, Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:0:Integer tests:2:Fib, Assignment1 Tests:0:Integer tests:1:LCM.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:0:Range, Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:0:Range, Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:0:Integer tests:2:Fib is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:0:Range, Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:0:Range, Assignment1 Tests:0:Integer tests:2:Fib.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:1:Arith. prog., Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:1:Arith. prog., Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:1:List creation tests:0:Range is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:1:Arith. prog., Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:1:Arith. prog., Assignment1 Tests:1:List creation tests:0:Range.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:2:Factors, Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:2:Factors, Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:1:List creation tests:1:Arith. prog. is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:2:Factors, Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:2:Factors, Assignment1 Tests:1:List creation tests:1:Arith. prog..
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:3:Reverse, Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:3:Reverse, Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:1:List creation tests:2:Factors is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:3:Reverse, Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:1:List creation tests:3:Reverse, Assignment1 Tests:1:List creation tests:2:Factors.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:0:Is ordered, Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:0:Is ordered, Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:1:List creation tests:3:Reverse is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:0:Is ordered, Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:0:Is ordered, Assignment1 Tests:1:List creation tests:3:Reverse.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:1:Insert string, Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:1:Insert string, Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:0:Is ordered is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:1:Insert string, Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:1:Insert string, Assignment1 Tests:2:Sort tests:0:Is ordered.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:2:Insertion sort, Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:2:Insertion sort, Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:2:Sort tests:1:Insert string is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:2:Insertion sort, Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:2:Insertion sort, Assignment1 Tests:2:Sort tests:1:Insert string.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:2:Insertion sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:3:Split list, Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:3:Split list, Assignment1 Tests:2:Sort tests:2:Insertion sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment1 Tests:2:Sort tests:4:Merge sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: Test Assignment1 Tests:2:Sort tests:3:Split list is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#01 I: End test Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: Test Assignment1 Tests:2:Sort tests:4:Merge sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment1 Tests:2:Sort tests:4:Merge sort, Assignment1 Tests:2:Sort tests:3:Split list.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#02 I: End test Assignment1 Tests:2:Sort tests:4:Merge sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment1 Tests:2:Sort tests:4:Merge sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment1 Tests:2:Sort tests:4:Merge sort.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: 0 tests running: .
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 has ended.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 has ended.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Used 2 worker during test execution.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Run 6 tests with shard sexy-kittens-macbook.local#01.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Run 6 tests with shard sexy-kittens-macbook.local#02.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#01, 2 times.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#02, 1 times.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: ==============
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Summary:
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:2:Sort tests:4:Merge sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:2:Sort tests:3:Split list is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:2:Sort tests:2:Insertion sort is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:2:Sort tests:1:Insert string is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:2:Sort tests:0:Is ordered is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:1:List creation tests:3:Reverse is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:1:List creation tests:2:Factors is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:1:List creation tests:1:Arith. prog. is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:1:List creation tests:0:Range is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:0:Integer tests:2:Fib is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:0:Integer tests:1:LCM is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Test Assignment1 Tests:0:Integer tests:0:Summate is successful.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Ran: 12 tests in: 0.12 seconds.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Cases: 12.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Tried: 12.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Errors: 0.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Failures: 0.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Skip: 0.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Todo: 0.
+2024-08-30T05:50:43+00:00 sexy-kittens-macbook.local#00 I: Timeout: 0.
