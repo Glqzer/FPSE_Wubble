@@ -1,7 +1,7 @@
 (*
   FPSE Assignment 2
 
-  Name                  :
+  Name                  : David Wang
   List of Collaborators :
 
   Please make a good faith effort at listing people you discussed any problems with here, as per the course academic integrity policy.  CAs/Prof need not be listed!
@@ -75,13 +75,22 @@ let unimplemented () =
 		Error "not square"
 *)
 let square_size (grid: int list list) : (int, string) result =
-	unimplemented ()
+	let len = List.length grid in
+	if List.for_all grid ~f:(fun ls -> List.length ls = len) then Ok(len) else Error("not square")
+
+
+let int_compare a b : bool =
+		compare a b = 0
 
 (*
 	Given a list of integers of length `n`, return true if and only if the list has exactly one occurrence of each number 1..n in it.	 
 *)
 let elements_span_range (l : int list) : bool = 
-	unimplemented ()
+	let n = List.length l in
+	let compLs = List.init n ~f:(fun i -> i + 1) in
+	let sorted_lst = List.sort ~compare:(compare) l in
+	List.equal int_compare sorted_lst compLs;;
+
 
 (* Check to see if a towers grid is well-formed, namely
 	1) it is square as per above,
@@ -90,8 +99,10 @@ let elements_span_range (l : int list) : bool =
 (*
 	Return true if and only if the grid is square, is at least 1x1, and each row and column spans the range as per above. 
 *)
-let is_well_formed_grid (grid : int list list) : bool = 
-	unimplemented ()
+let is_well_formed_grid (grid : int list list) : bool = match square_size grid with 
+	| Ok(0) -> false
+	| Error a -> false
+	| Ok b -> List.for_all grid ~f:(fun ls -> elements_span_range ls)
 
 (*
 	-------------

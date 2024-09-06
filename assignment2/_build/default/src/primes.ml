@@ -1,7 +1,7 @@
 (*
   FPSE Assignment 2
 
-  Name                  :
+  Name                  : David Wang
   List of Collaborators :
 
   Please make a good faith effort at listing people you discussed any problems with here, as per the course academic integrity policy.  CAs/Prof need not be listed!
@@ -20,14 +20,14 @@ open Core
 (* Disables "unused variable" warning from dune while you're still solving these! *)
 [@@@ocaml.warning "-27"]
 
-let unimplemented () =
-  failwith "unimplemented"
-
 (* 
   Check if positive integer `n` is prime. This should be able to quickly handle numbers up to 2^32.
 *)
-let is_prime (n : int) : bool =
-  unimplemented ()
+let is_prime (n : int) : bool = 
+  let rec check_num m = 
+    if m * m > n then true
+    else (n mod m <> 0 && check_num (m + 1)) in
+  n >= 2 && check_num 2
 
 (*
   Given a positive integer `n`, produce the sorted list of all prime factors of `n` without multiplicity.
@@ -42,7 +42,13 @@ let is_prime (n : int) : bool =
     - : int list = [2; 3]
 *)
 let prime_factors (n : int) : int list =
-  unimplemented ()
+  List.init n ~f:(fun i -> i + 1) |> List.filter ~f:(fun m -> n mod m = 0 && is_prime m)
+
+(* 
+  Count how many times prime p divides n
+*)
+let rec multiplicity n p =
+  if n mod p = 0 then 1 + multiplicity (n / p) p else 0
 
 (* 
   Given integer `n` greater than 1, return the prime factor of `n` that has the greatest multiplicity.
@@ -57,4 +63,11 @@ let prime_factors (n : int) : int list =
     - : int = 2
 *)
 let prime_factor_with_greatest_multiplicity (n : int) : int =
-  unimplemented ()
+  let pf = prime_factors n in
+  let rec highest_multiplicity ls record count = match ls with 
+    | [] -> record
+    | x :: xs -> 
+      if multiplicity n x >= count then highest_multiplicity xs x (multiplicity n x) 
+      else highest_multiplicity xs record count in
+  highest_multiplicity pf 0 0
+

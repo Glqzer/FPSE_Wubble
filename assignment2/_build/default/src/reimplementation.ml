@@ -1,8 +1,8 @@
 (*
   FPSE Assignment 2
 
-  Name                  :
-  List of Collaborators :
+  Name                  : David Wang
+  List of Collaborators : Emma Levitsky
 
   Please make a good faith effort at listing people you discussed any problems with here, as per the course academic integrity policy.  CAs/Prof need not be listed!
 
