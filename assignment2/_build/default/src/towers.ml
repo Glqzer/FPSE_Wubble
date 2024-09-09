@@ -50,8 +50,10 @@ open Core
 (* Disables "unused variable" warning from dune while you're still solving these! *)
 [@@@ocaml.warning "-27"]
 
+(*
 let unimplemented () =
 	failwith "unimplemented"
+*)
 
 (*
 	We can represent the tower board itself as a list of lists of ints.  
@@ -76,11 +78,11 @@ let unimplemented () =
 *)
 let square_size (grid: int list list) : (int, string) result =
 	let len = List.length grid in
-	if List.for_all grid ~f:(fun ls -> List.length ls = len) then Ok(len) else Error("not square")
+	if List.for_all grid ~f:(fun ls -> List.length ls = len) then Ok(len) else Error("not square");;
 
 
 let int_compare a b : bool =
-		compare a b = 0
+		compare a b = 0;;
 
 (*
 	Given a list of integers of length `n`, return true if and only if the list has exactly one occurrence of each number 1..n in it.	 
@@ -90,6 +92,31 @@ let elements_span_range (l : int list) : bool =
 	let compLs = List.init n ~f:(fun i -> i + 1) in
 	let sorted_lst = List.sort ~compare:(compare) l in
 	List.equal int_compare sorted_lst compLs;;
+
+(*
+	Helper function for transpose
+*)
+let rec transpose_helper (grid : int list list) (aux : int list list) = 
+	match grid with 
+	| [] -> List.rev aux
+	| [] :: _ -> List.rev aux
+	| _ -> 
+			let first = List.map grid ~f:(fun a -> match a with
+			| x :: xs -> x
+			| [] -> failwith "Empty Row") in
+
+			let rest = List.map grid ~f:(fun a -> match a with
+			| x :: xs -> xs
+			| [] -> failwith "Empty Row") in
+
+			transpose_helper rest (first :: aux);;
+
+
+(*
+	Transpose the grid. Recall that you may assume the grid is square.
+*)
+let transpose (grid : int list list) : int list list =
+	transpose_helper grid [];;
 
 
 (* Check to see if a towers grid is well-formed, namely
@@ -102,7 +129,9 @@ let elements_span_range (l : int list) : bool =
 let is_well_formed_grid (grid : int list list) : bool = match square_size grid with 
 	| Ok(0) -> false
 	| Error a -> false
-	| Ok b -> List.for_all grid ~f:(fun ls -> elements_span_range ls)
+	| Ok b -> if List.for_all grid ~f:(fun ls -> elements_span_range ls) then
+		let rotated = transpose grid in
+		List.for_all rotated ~f:(fun ls -> elements_span_range ls) else false;;
 
 (*
 	-------------
@@ -115,10 +144,27 @@ let is_well_formed_grid (grid : int list list) : bool = match square_size grid w
 *)
 
 (*
+	Helper function for towers_seen_helper
+*)
+let rec towers_seen_helper (row : int list) (count : int) (last : int): int = match row with
+	| [] -> count
+	| a :: xs -> if last < a then towers_seen_helper xs (count + 1) a
+	else towers_seen_helper xs count last;;
+
+(*
 	The lowest level of the validity check for towers requires finding the number of new maxima going down a given list. Implement the function `number_towers_seen` to find the number of items in the list that are larger than all items to their left.
 *)
 let number_towers_seen (row : int list) : int =  
-	unimplemented ()
+	towers_seen_helper row 0 0;;
+
+(* 
+	Helper function for verify left clues
+*)
+let rec left_clues_helper (grid : int list list) (aux : int list) : int list = 
+	match grid with 
+	| [] -> List.rev aux
+	| a :: xs -> let seen = number_towers_seen a in 
+		left_clues_helper xs (seen :: aux);;
 
 (*
 	There are many reasonable ways to apply the above function to each row and column around the grid.	 
@@ -127,8 +173,17 @@ let number_towers_seen (row : int list) : int =
 
 	Given a well-formed grid and a list of clues corresponding to the rows in the grid, return true if and only if the clues are correct on the grid from the left for each row.
 *)
-let verify_left_clues (grid : int list list) (edge_clues : int list) : bool =
-	unimplemented ()
+let verify_left_clues (grid : int list list) (edge_clues : int list) : bool = 
+	let aux = left_clues_helper grid [] in
+	List.equal int_compare aux edge_clues;;
+	
+(* 
+	Helper function to reflect the grid
+*)
+let rec reflect_helper (grid : int list list) (aux : int list list) =
+	match grid with
+	| [] -> List.rev aux
+	| a :: xs -> reflect_helper xs ((List.rev a) :: aux);;
 
 (*
 	To check the clues on all four edges, we will rotate the grid counter-clockwise and call the above function at each rotation.
@@ -136,19 +191,25 @@ let verify_left_clues (grid : int list list) (edge_clues : int list) : bool =
 	We will rotate counter-clockwise by first reflecting the grid across a vertical axis and then transposing.
 *)
 let reflect_across_vertical_axis (grid : int list list) : int list list =
-	unimplemented ()
+	reflect_helper grid [];;
 
-(*
-	Transpose the grid. Recall that you may assume the grid is square.
-*)
-let transpose (grid : int list list) : int list list =
-	unimplemented ()
 
 (*
 	Now compose the two functions to rotate the grid counter-clockwise.
 *)
 let rotate_ccw (grid : int list list) : int list list = 
-	unimplemented ()
+	transpose (reflect_across_vertical_axis grid);;
+
+(* 
+	Verification helper
+*)
+let rec verification_helper (grid : int list list) (four_edge_clues : int list list) : bool =
+	match four_edge_clues with
+	| [] -> true
+	| a :: xs -> if verify_left_clues grid a then 
+		let rotated = rotate_ccw grid in
+		verification_helper rotated xs
+		else false;;
 
 (*
 	-------------------------
@@ -162,4 +223,6 @@ let rotate_ccw (grid : int list list) : int list list =
 	If the grid is ill-formed or the clues are not all satisfied, return false.
 *)
 let is_towers_solution  (grid : int list list) (four_edge_clues : int list list) : bool = 
-	unimplemented ()
+	if is_well_formed_grid grid then
+		verification_helper grid four_edge_clues
+	else false
