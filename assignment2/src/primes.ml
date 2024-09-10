@@ -29,6 +29,13 @@ let is_prime (n : int) : bool =
     else (n mod m <> 0 && check_num (m + 1)) in
   n >= 2 && check_num 2
 
+let rec remove_dupes (n : int list) (aux : int list) : int list = 
+  match n, aux with 
+  | [], _ -> aux
+  | x :: xs, a :: axs -> if x = a then remove_dupes xs aux else remove_dupes xs (x :: aux)
+  | x :: xs, [] -> remove_dupes xs (x :: aux)
+
+
 (*
   Given a positive integer `n`, produce the sorted list of all prime factors of `n` without multiplicity.
 
@@ -42,7 +49,11 @@ let is_prime (n : int) : bool =
     - : int list = [2; 3]
 *)
 let prime_factors (n : int) : int list =
-  List.init n ~f:(fun i -> i + 1) |> List.filter ~f:(fun m -> n mod m = 0 && is_prime m)
+  let rec aux d n acc =
+    if n = 1 || n = 0 then acc
+    else if n mod d = 0 then aux d (n / d) (d :: acc)
+    else aux (d + 1) n acc
+  in remove_dupes (aux 2 n []) []
 
 (* 
   Count how many times prime p divides n
