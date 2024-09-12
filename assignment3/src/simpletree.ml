@@ -31,5 +31,22 @@ type 'a t =
 
 let size (tree : 'a t) : int =
   unimplemented ()
+;;
 
 (* ... below, implement the remaining functions in simpletree.mli ....*)
+
+let height (tree : 'a t) : int = 
+  unimplemented ()
+;;
+
+let is_balanced (tree : 'a t) : bool = 
+  unimplemented ()
+;;
+
+let to_list (tree : 'a t) : 'a list = 
+  unimplemented ()
+;;
+
+let is_ordered (tree : 'a t) ~compare : bool = 
+  unimplemented ()
+;;

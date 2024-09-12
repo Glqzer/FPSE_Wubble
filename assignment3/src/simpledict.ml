@@ -58,3 +58,43 @@ let size (dict : 'a t) : int =
   Simpletree.size dict
 
 (* ... below, implement the remaining functions in simpledict.mli ....*)
+
+let to_list (dict : 'a t) : (string * 'a) list = 
+  unimplemented()
+;;
+
+let lookup (dict : 'a t) ~key : 'a option = 
+  unimplemented()
+;;
+
+let lookup_exn (dict : 'a t) ~key : 'a = 
+  unimplemented ()
+;;
+
+let insert (dict : 'a t) ~key ~value : 'a t = 
+  unimplemented ()
+;;
+
+let of_list (ls : (string * 'a) list) : 'a t = 
+  unimplemented ()
+;;
+
+let of_list_multi (ls : (string * 'a) list) : 'a list t = 
+  unimplemented ()
+;;
+
+let map (dict : 'a t) ~f : 'b t = 
+  unimplemented ()
+;;
+
+let update (dict : 'a t) ~key ~f : 'a t = 
+  unimplemented ()
+;;
+
+let merge (dict1 : 'a t) (dict2 : 'a t) : 'a t = 
+  unimplemented ()
+;;
+
+let merge_with (dict1 : 'a t) (dict2 : 'b t) ~merger : 'c t = 
+  unimplemented ()
+;;
