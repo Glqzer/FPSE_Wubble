@@ -54,17 +54,18 @@ let empty : 'a t = Simpletree.Leaf
   We provide `size` for you to demonstrate that the Simpletree module functions work on the dict
   since the dict is a Simpletree.t.
 *)
+
 let size (dict : 'a t) : int =
   Simpletree.size dict
 
 (* ... below, implement the remaining functions in simpledict.mli ....*)
 
 let to_list (dict : 'a t) : (string * 'a) list = 
-  unimplemented()
+  unimplemented ()
 ;;
 
 let lookup (dict : 'a t) ~key : 'a option = 
-  unimplemented()
+  unimplemented ()
 ;;
 
 let lookup_exn (dict : 'a t) ~key : 'a = 
