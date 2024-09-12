@@ -30,6 +30,7 @@
 *)
 
 open Core
+open Simpletree
 
 (* Disables "unused variable" warning from dune while you're still solving these! *)
 [@@@ocaml.warning "-27"]
@@ -49,20 +50,51 @@ end (* module Item *)
 type 'a t = 'a Item.t Simpletree.t [@@deriving show]
 
 let empty : 'a t = Simpletree.Leaf
+(** [empty] is an empty dictionary. *)
+
+(*
+  We will now define several natural operations on these dictionaries.
+
+  IMPORTANT:
+
+    We will implicitly require all dicts **provided to and created by** the functions below to obey the
+    `Simpletree.is_ordered` and `Simpletree.is_balanced` requirements.
+  
+  You do not need to check that the dicts are ordered/balanced when they are provided to a function.
+
+  The autograder for this assignment will check that all dicts resulting from these functions are balanced and ordered.
+*)
 
 (* 
   We provide `size` for you to demonstrate that the Simpletree module functions work on the dict
   since the dict is a Simpletree.t.
 *)
 
+(** 
+  [size t] is the number of key, value pairs in [t]. 
+*)
 let size (dict : 'a t) : int =
   Simpletree.size dict
 
 (* ... below, implement the remaining functions in simpledict.mli ....*)
 
-let to_list (dict : 'a t) : (string * 'a) list = 
-  unimplemented ()
+(*
+  Helper recursive function for to_list, using :: operator so that the function runs on O(1) time or as close to it as possible.
+*)
+let rec to_list_helper (tree : 'a t) (aux : (string * 'a) list) : (string * 'a) list = 
+  match tree with 
+  | Leaf -> aux
+  | Branch {item; left; right} -> to_list_helper left ((item.Item.key, item.Item.value) :: to_list_helper right aux)
 ;;
+
+(** 
+[to_list t] is a list of (key,value) pairs which retains [t]'s ordering (the 'inorder' traversal).
+    This should take O(n) time; recall that each (::) is O(1) and each (@) is O(n). 
+*)
+let to_list (dict : 'a t) : (string * 'a) list = 
+  to_list_helper dict []
+;;
+
 
 let lookup (dict : 'a t) ~key : 'a option = 
   unimplemented ()

@@ -20,8 +20,6 @@ open Core
 (* Disables "unused variable" warning from dune while you're still solving these! *)
 [@@@ocaml.warning "-27"]
 
-let unimplemented () = failwith "unimplemented"
-
 type 'a t =
   | Leaf
   | Branch of
@@ -85,32 +83,22 @@ let to_list (tree : 'a t) : 'a list =
   to_list_helper tree []
 ;;
 
-(*
-  Helper function to determine whether or not a value is within the min or max
+(* 
+  Helper function to test if a list is sorted
 *)
-let within_min_max (item : 'a) (min : 'a) (max : 'a) ~compare : bool = 
-  (match min with
-    | Some min_val -> compare item min_val > 0
-    | None -> true)
-  &&
-  (match max with
-    | Some max_val -> compare item max_val < 0
-    | None -> true)
-;;
-
-(*
-  Helper function to determine if a branch is ordered or not, depending on its left and right node and minimum and maximum values for said nodes.
-*)
-let rec is_ordered_helper (tree : 'a t) (min : 'a) (max : 'a) ~compare : bool = 
-  match tree with 
-  | Leaf -> true
-  | Branch {item; left; right} -> within_min_max item min max ~compare && is_ordered_helper left min item ~compare && is_ordered_helper right item ~compare max
-;;
+let rec order_helper (ls : 'a list) (prev : 'a) ~compare = match ls with 
+  | [] -> true
+  | [x] -> compare prev x <= 0
+  | x :: xs -> if compare prev x <= 0 then order_helper xs x ~compare
+    else false
 
 (** [is_ordered t ~compare] is true if for every branch in [t], all left subtree items are strictly less than the branch item, and all 
     right subtree items are strictly greater.
     Note that this requirement guarantees (by induction) that the tree has no duplicate items. *)
 
 let is_ordered (tree : 'a t) ~compare : bool = 
-  is_ordered_helper tree None None ~compare
+  let ordered_list = to_list_helper tree [] in 
+  match ordered_list with 
+  | [] -> true
+  | x :: xs -> order_helper xs x ~compare
 ;;
