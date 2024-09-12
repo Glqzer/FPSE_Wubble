@@ -1,179 +1,165 @@
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Runner: processes
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Chooser: simple
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration suite_name = "Assignment2 Tests"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration cache_filename = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/Class Folders/601.629 (Functional Programming)/FPSE_Wubble/assignment2/_build/default/test/oUnit-$(suite_name).cache"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration run_gc_full_major = "true"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration display = "true"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration results_style_1_X = "false"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration testdata_dir = "none"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration health_check_interval = "1."
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration verbose = "false"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration chooser = "simple"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration output_html_dir = "none"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_kill_period = "5."
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration runner = "processes"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration shards = "2"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_grace_period = "5."
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration log_encoding = "utf-8"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration output_junit_file = "none"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration ci = "false"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Configuration output_file = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/Class Folders/601.629 (Functional Programming)/FPSE_Wubble/assignment2/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Using 2 workers maximum.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#01.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 started.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#02.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 started.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:0:Student tests:0:Dummy test 1 is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:0:Student tests:1:Dummy test 2 is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Reimplementation tests:0:Factors is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:2:Insert string, Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:2:Insert string, Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog. is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:2:Insert string, Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:2:Insert string, Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Reimplementation tests:2:Insert string is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:0:Is Prime, Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:0:Is Prime, Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:1:Reimplementation tests:3:Split list is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:0:Is Prime, Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:0:Is Prime, Assignment2 Tests:1:Reimplementation tests:3:Split list.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:2:Primes tests:1:Prime factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:2:Primes tests:0:Is Prime is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:2:Primes tests:1:Prime factors is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:2:Primes tests:1:Prime factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity, Assignment2 Tests:2:Primes tests:1:Prime factors.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:0:Square size.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:0:Square size is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:0:Square size.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:1:Elements_span_range, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:1:Elements_span_range, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:2:Well_formed_grid.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:2:Well_formed_grid is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:1:Elements_span_range is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:2:Well_formed_grid.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:3:Number towers seen, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:3:Number towers seen is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:5:Reflect, Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:5:Reflect, Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:4:Verify left clues is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:5:Reflect, Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:5:Reflect, Assignment2 Tests:3:Towers tests:4:Verify left clues.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:5:Reflect is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:6:Rotate is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 2 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution, Assignment2 Tests:3:Towers tests:6:Rotate.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:7:Is towers solution is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: 0 tests running: .
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 has ended.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 died unexpectedly.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Used 2 worker during test execution.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Run 9 tests with shard sexy-kittens-macbook.local#01.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Run 8 tests with shard sexy-kittens-macbook.local#02.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#01, 2 times.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#02, 4 times.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: ==============
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Summary:
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:7:Is towers solution is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:6:Rotate is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:5:Reflect is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:4:Verify left clues is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:3:Number towers seen is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:1:Elements_span_range is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:2:Well_formed_grid is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:0:Square size is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:1:Prime factors is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:0:Is Prime is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:3:Split list is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:2:Insert string is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog. is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:0:Factors is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:0:Student tests:1:Dummy test 2 is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:0:Student tests:0:Dummy test 1 is successful.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Ran: 17 tests in: 0.14 seconds.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Cases: 17.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Tried: 17.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Errors: 0.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Failures: 0.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Skip: 0.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Todo: 0.
-2024-09-10T05:20:14+00:00 sexy-kittens-macbook.local#00 I: Timeout: 0.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Runner: processes
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Chooser: simple
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration suite_name = "Assignment2 Tests"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration cache_filename = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/Class Folders/601.629 (Functional Programming)/FPSE_Wubble/assignment2/_build/default/test/oUnit-$(suite_name).cache"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration run_gc_full_major = "true"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration display = "true"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration results_style_1_X = "false"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration testdata_dir = "none"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration health_check_interval = "1."
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration verbose = "false"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration chooser = "simple"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration output_html_dir = "none"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_kill_period = "5."
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration runner = "processes"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration shards = "2"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration processes_grace_period = "5."
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration log_encoding = "utf-8"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration output_junit_file = "none"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration ci = "false"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Configuration output_file = "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/Class Folders/601.629 (Functional Programming)/FPSE_Wubble/assignment2/_build/default/test/oUnit-$(suite_name)-$(shard_id).log"
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Using 2 workers maximum.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#01.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 started.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Starting worker number sexy-kittens-macbook.local#02.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 started.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:0:Student tests:1:Dummy test 2.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:0:Student tests:0:Dummy test 1 is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:0:Student tests:1:Dummy test 2, Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:0:Student tests:1:Dummy test 2 is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:0:Student tests:1:Dummy test 2.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:0:Factors, Assignment2 Tests:0:Student tests:1:Dummy test 2.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog. is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Reimplementation tests:0:Factors is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog..
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:1:Arith. prog., Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:2:Insert string, Assignment2 Tests:1:Reimplementation tests:0:Factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Reimplementation tests:3:Split list.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Reimplementation tests:3:Split list is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:1:Reimplementation tests:2:Insert string is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Reimplementation tests:3:Split list.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:1:Reimplementation tests:3:Split list, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:0:Is Prime, Assignment2 Tests:1:Reimplementation tests:2:Insert string.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:2:Primes tests:1:Prime factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:2:Primes tests:1:Prime factors is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:2:Primes tests:1:Prime factors.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:1:Prime factors, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:2:Primes tests:0:Is Prime is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity, Assignment2 Tests:2:Primes tests:0:Is Prime.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:0:Square size.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:0:Square size is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:0:Square size, Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:0:Square size.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:1:Elements_span_range, Assignment2 Tests:3:Towers tests:0:Square size.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:2:Well_formed_grid.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:1:Elements_span_range is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:2:Well_formed_grid is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:2:Well_formed_grid, Assignment2 Tests:3:Towers tests:1:Elements_span_range.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:2:Well_formed_grid.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:3:Number towers seen, Assignment2 Tests:3:Towers tests:2:Well_formed_grid.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:4:Verify left clues.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:3:Number towers seen is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:4:Verify left clues is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:4:Verify left clues, Assignment2 Tests:3:Towers tests:3:Number towers seen.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:4:Verify left clues.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:5:Reflect, Assignment2 Tests:3:Towers tests:4:Verify left clues.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Start test Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:6:Rotate.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: Test Assignment2 Tests:3:Towers tests:5:Reflect is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:6:Rotate is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#02 I: End test Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:6:Rotate.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 2 tests running: Assignment2 Tests:3:Towers tests:6:Rotate, Assignment2 Tests:3:Towers tests:5:Reflect.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:3:Towers tests:7:Is towers solution is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Still 1 tests running : Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 1 tests running: Assignment2 Tests:3:Towers tests:7:Is towers solution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: 0 tests running: .
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#02 has ended.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Worker sexy-kittens-macbook.local#01 has ended.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Used 2 worker during test execution.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Run 9 tests with shard sexy-kittens-macbook.local#01.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Run 8 tests with shard sexy-kittens-macbook.local#02.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#01, 1 times.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Check health of shard sexy-kittens-macbook.local#02, 5 times.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: ==============
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Summary:
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:7:Is towers solution is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:6:Rotate is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:5:Reflect is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:4:Verify left clues is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:3:Number towers seen is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:2:Well_formed_grid is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:1:Elements_span_range is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:3:Towers tests:0:Square size is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:2:Prime Factor with Greatest Multiplicity is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:0:Is Prime is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:2:Primes tests:1:Prime factors is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:2:Insert string is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:3:Split list is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:0:Factors is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:1:Reimplementation tests:1:Arith. prog. is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:0:Student tests:1:Dummy test 2 is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Test Assignment2 Tests:0:Student tests:0:Dummy test 1 is successful.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Ran: 17 tests in: 0.13 seconds.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Cases: 17.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Tried: 17.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Errors: 0.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Failures: 0.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Skip: 0.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Todo: 0.
+2024-09-09T22:15:54+00:00 sexy-kittens-macbook.local#00 I: Timeout: 0.
