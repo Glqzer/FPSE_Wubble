@@ -72,7 +72,7 @@ let empty : 'a t = Simpletree.Leaf
   The autograder for this assignment will check that all dicts resulting from these functions are balanced and ordered.
 *)
 
-(* AVL FUNCTIONS
+(* AVL FUNCTIONS *)
 
 (*
   Helper function to check the balance factor of the tree.
@@ -86,29 +86,59 @@ let balance_factor (dict : 'a t) : int =
 (* 
   Helper function to rotate left
 *)
-let rotate_left ~root ~right ~right_left =
-  match right with
-  | Branch { item = right_item; left = _; right = right_right } ->
-      Branch {
-        item = right_item;
-        left = Branch { item = root; left = Leaf; right = right_left };
-        right = right_right;
-      }
-  | Leaf -> failwith "rotate_left: Invalid rotation"
+let rotate_left ~root ~right =
+  match root, right with
+  | Branch { item = root_item; left = rLeft; right = rRight }, Branch { item = right_item; left = right_left; right = right_right } ->
+    (* Left rotation: right becomes the new root *)
+    Branch {
+      item = right_item;
+      left = Branch { item = root_item; left = rLeft; right = right_left };
+      right = right_right;
+    }
+  | _ -> failwith "rotate_left: Invalid rotation"
+;;
 
 (*
   Helper function to rotate right
 *)
-let rotate_right ~root ~left ~left_right =
-  match left with
-  | Branch { item = left_item; left = left_left; right = _ } ->
-      Branch {
-        item = left_item;
-        left = left_left;
-        right = Branch { item = root; left = left_right; right = Leaf };
-      }
-  | Leaf -> failwith "rotate_right: Invalid rotation"
-*)
+let rotate_right ~root ~left =
+  match root, left with
+  | Branch { item = root_item; left = rLeft; right = rRight }, Branch { item = left_item; left = left_left; right = left_right } ->
+    (* Right rotation: left becomes the new root *)
+    Branch {
+      item = left_item;
+      left = left_left;
+      right = Branch { item = root_item; left = left_right; right = rRight };
+    }
+  | _ -> failwith "rotate_right: Invalid rotation"
+;;
+
+(* Balance the AVL tree after insertion *)
+let balance (dict : 'a t) : 'a t =
+  match dict with
+  | Leaf -> Leaf
+  | Branch { item = root_item; left; right } as node ->
+    let bf = balance_factor node in
+    if bf > 1 then
+      match left with
+      | Branch { item = left_item; left = left_left; right = left_right } ->
+        if balance_factor left >= 0 then
+          rotate_right ~root:node ~left
+        else
+          let new_left = rotate_left ~root:left ~right:left_right in
+          rotate_right ~root:node ~left:new_left
+      | _ -> node
+    else if bf < -1 then
+      match right with
+      | Branch { item = right_item; left = right_left; right = right_right } ->
+        if balance_factor right <= 0 then
+          rotate_left ~root:node ~right
+        else
+          let new_right = rotate_right ~root:right ~left:right_left in
+          rotate_left ~root:node ~right:new_right
+      | _ -> node
+    else
+      node
 
 (* 
   We provide `size` for you to demonstrate that the Simpletree module functions work on the dict
@@ -171,17 +201,19 @@ This should also be O(log n), as explained in lecture.
 let rec insert (dict : 'a t) ~key ~value : 'a t = 
   match dict with
   | Leaf ->
-    Branch { item = { key; value }; left = Leaf; right = Leaf }
+      Branch { item = { key = key; value = value }; left = Leaf; right = Leaf }
   | Branch { item; left; right } ->
-    let cmp = String.compare key item.Item.key in
-    if cmp = 0 then
-      Branch { item = { key; value }; left; right }
-    else if cmp < 0 then
-      let new_left = insert left ~key ~value in
-      Branch { item; left = new_left; right }
-    else
-      let new_right = insert right ~key ~value in
-      Branch { item; left; right = new_right }
+      let cmp = String.compare key item.key in
+      let updated_tree =
+        if cmp = 0 then
+          let new_item = { item with value = value } in
+          Branch { item = new_item; left; right }
+        else if cmp < 0 then
+          Branch { item; left = insert left ~key ~value; right }
+        else
+          Branch { item; left; right = insert right ~key ~value }
+      in
+      balance updated_tree
 ;;
 
 
@@ -210,7 +242,20 @@ let rec of_list_multi_helper (ls : (string * 'a) list) (dict : 'a list t) : 'a l
     of_list_multi_helper xs updated_dict
     | None -> let updated_dict = insert dict ~key ~value:[value] in
     of_list_multi_helper xs updated_dict
-    
+;;
+
+(* Reverse the lists in the dictionary *)
+let rec reverse_lists (dict : 'a list t) : 'a list t =
+  match dict with
+  | Leaf -> Leaf
+  | Branch { item = { key; value }; left; right } ->
+    let reversed_item = { Item.key; Item.value = List.rev value } in
+    Branch {
+      item = reversed_item;
+      left = reverse_lists left;
+      right = reverse_lists right
+    }
+;;
 
 (** [of_list_multi ls] is a dictionary mapping the keys in [ls] to the list of all values associated to the key.
     The list of values is in the order they occur in [ls].
@@ -220,7 +265,8 @@ let rec of_list_multi_helper (ls : (string * 'a) list) (dict : 'a list t) : 'a l
             Leaf         { key:"world" ; [1] }
         modulo shape of tree. *)
 let of_list_multi (ls : (string * 'a) list) : 'a list t = 
-  of_list_multi_helper ls empty
+  let dict = of_list_multi_helper ls empty in
+  reverse_lists dict
 ;;
 
 (** 

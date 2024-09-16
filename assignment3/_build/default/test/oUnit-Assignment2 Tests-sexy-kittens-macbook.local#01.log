@@ -1,0 +1,15 @@
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:0:Student tests:0:Dummy test 1 is successful.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:0:Student tests:0:Dummy test 1.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Tree tests:0:size.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Tree tests:0:size is successful.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Tree tests:0:size.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:1:Tree tests:3:to_list.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:1:Tree tests:3:to_list is successful.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:1:Tree tests:3:to_list.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:2:Dict tests:0:to_list.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:2:Dict tests:0:to_list is successful.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:2:Dict tests:0:to_list.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Start test Assignment2 Tests:2:Dict tests:2:insert_many.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: Test Assignment2 Tests:2:Dict tests:2:insert_many is successful.
+2024-09-16T05:34:26+00:00 sexy-kittens-macbook.local#01 I: End test Assignment2 Tests:2:Dict tests:2:insert_many.
