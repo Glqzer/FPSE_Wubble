@@ -51,6 +51,11 @@ module Student_tests =
       ; left = Branch {item = "2"; left = Branch {item = "3"; left = Leaf; right = Leaf}; right = Leaf}
       ; right = Leaf})
 
+    let t3 = T.(Branch
+      { item = "1"
+      ; left = Branch {item = "1"; left = Branch {item = "2"; left = Leaf; right = Leaf}; right = Leaf}
+      ; right = Leaf})
+
     
 
 
@@ -62,7 +67,9 @@ module Student_tests =
       assert_equal (T.is_ordered t2 ~compare:String.compare) false;
       assert_equal (T.to_list t2) ["3"; "2"; "1"];
       assert_equal (T.size t2) 3;
-      assert_equal (T.height t2) 2
+      assert_equal (T.height t2) 2;
+      assert_equal (T.is_ordered Leaf ~compare:String.compare) true;
+      assert_equal (T.is_ordered t3 ~compare:String.compare) false
 
 
 

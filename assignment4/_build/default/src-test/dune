@@ -1,0 +1,30 @@
+
+(library
+  (name exec_tests)
+  (modules exec_tests)
+  (libraries
+    ounit2
+    histogram
+    core_unix
+    core))
+
+(library
+  (name hist_tests)
+  (modules hist_tests)
+  (libraries
+    histogram
+    ounit2
+    core))
+
+(test
+  (name tests)
+  (modules tests)
+  (libraries
+    core
+    ounit2
+    histogram
+    utils
+    exec_tests
+    hist_tests
+  )
+  (deps (file ../src/bin/keywordcount.exe) (glob_files_rec ../test/**)))

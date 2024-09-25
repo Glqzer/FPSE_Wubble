@@ -84,21 +84,25 @@ let to_list (tree : 'a t) : 'a list =
 ;;
 
 (* 
-  Helper function to test if a list is sorted
+  Helper function for is_ordered
 *)
-let rec order_helper (ls : 'a list) (prev : 'a) ~compare = match ls with 
-  | [] -> true
-  | [x] -> compare prev x <= 0
-  | x :: xs -> if compare prev x <= 0 then order_helper xs x ~compare
-    else false
+  let rec is_ordered_helper (t : 'a t) ~compare ~min ~max =
+    match t with
+    | Leaf -> true
+    | Branch { item; left; right } ->
+      let within_bounds = 
+        (match min with None -> true | Some min_item -> compare min_item item < 0) &&
+        (match max with None -> true | Some max_item -> compare item max_item < 0)
+      in
+      within_bounds &&
+      is_ordered_helper left ~compare ~min ~max:(Some item) &&
+      is_ordered_helper right ~compare ~min:(Some item) ~max
+  ;;
 
 (** [is_ordered t ~compare] is true if for every branch in [t], all left subtree items are strictly less than the branch item, and all 
     right subtree items are strictly greater.
     Note that this requirement guarantees (by induction) that the tree has no duplicate items. *)
 
 let is_ordered (tree : 'a t) ~compare : bool = 
-  let ordered_list = to_list_helper tree [] in 
-  match ordered_list with 
-  | [] -> true
-  | x :: xs -> order_helper xs x ~compare
+  is_ordered_helper tree ~compare ~min:None ~max:None
 ;;

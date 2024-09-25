@@ -1,0 +1,16 @@
+(rule
+  (target assignment4.zip)
+  (deps 
+    src/bin/keywordcount.ml
+    src/bin/dune
+    src/lib/histogram.ml
+    src/lib/histogram.mli
+    src/lib/utils.ml
+    src/lib/utils.mli
+    src/lib/dune
+    src-test/tests.ml
+    src-test/dune
+    (glob_files_rec test/**)
+  )
+  (action
+    (run zip -R assignment4.zip %{deps})))

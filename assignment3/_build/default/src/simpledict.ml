@@ -42,14 +42,11 @@ open Simpletree
 
 exception Not_found_error of string
 
-let unimplemented () =
-  failwith "unimplemented"
-
 module Item = struct
   type 'a t = { key: string ; value: 'a } [@@deriving show]
 
   let compare (x : 'a t) (y : 'a t) : int =
-    unimplemented ()
+    String.compare x.key y.key
 
 end (* module Item *)
 
