@@ -1,0 +1,16 @@
+(library
+  (name ngrams_tests)
+  (modules ngrams_tests)
+  (libraries
+    ounit2
+    core))
+
+(test
+  (name tests)
+  (modules tests)
+  (libraries
+    core
+    ounit2
+    ngrams_tests
+  )
+  (deps (file ../src/bin/ngrams.exe) (glob_files_rec ../test/**)))

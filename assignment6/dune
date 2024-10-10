@@ -1,0 +1,12 @@
+(rule
+  (target assignment6.zip)
+  (deps 
+    src/bin/ngrams.ml
+    src/bin/dune
+    src-test/dune
+    src-test/ngrams_tests.ml
+    src-test/tests.ml
+    (glob_files_rec test/**)
+  )
+  (action
+    (run zip -R assignment6.zip %{deps})))

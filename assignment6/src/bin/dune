@@ -1,0 +1,11 @@
+(executable
+  (name ngrams)
+  (modules
+    ngrams)
+  (libraries
+    core
+    core_unix
+    core_unix.sys_unix
+    stdio
+    utils
+    )); This is for you to fill in 

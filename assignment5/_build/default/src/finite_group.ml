@@ -121,11 +121,11 @@ struct
   (* Implement inverse *)
   let inverse element =
     let rec find_inverse current_element =
-      match Op.next current_element with
-      | None -> failwith "Invalid Group"
-      | Some next_element ->
-        if Op.compare (Op.op current_element element) (id ()) = 0 then current_element
-        else find_inverse next_element
+      if Op.compare (Op.op current_element element) (id ()) = 0 then current_element
+      else 
+        match Op.next current_element with
+        | None -> failwith "Invalid Group"
+        | Some next_element -> find_inverse next_element
     in
     find_inverse Op.zero
   let op = Op.op
