@@ -1,9 +1,17 @@
 (library
+  (name types)
+  (modules types)
+  (libraries core)
+  (preprocess
+  (pps ppx_deriving.show ppx_jane)))
+
+(library
   (name utils)
   (modules
     utils)
   (libraries
     core
     core_unix
+    types
     core_unix.sys_unix
     stdio))
