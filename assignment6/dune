@@ -3,6 +3,9 @@
   (deps 
     src/bin/ngrams.ml
     src/bin/dune
+    src/lib/dune
+    src/lib/ngramtype.ml
+    src/lib/utils.ml
     src-test/dune
     src-test/ngrams_tests.ml
     src-test/tests.ml

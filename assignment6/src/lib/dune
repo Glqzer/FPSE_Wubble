@@ -1,6 +1,6 @@
 (library
-  (name types)
-  (modules types)
+  (name ngramtype)
+  (modules ngramtype)
   (libraries core)
   (preprocess
   (pps ppx_deriving.show ppx_jane)))
@@ -12,6 +12,6 @@
   (libraries
     core
     core_unix
-    types
+    ngramtype
     core_unix.sys_unix
     stdio))
