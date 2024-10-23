@@ -1,0 +1,18 @@
+
+(library
+  (name histogram)
+  (modules histogram)
+  (libraries core)
+  (preprocess
+  (pps ppx_deriving.show ppx_jane)))
+
+(library
+  (name utils)
+  (modules
+    utils)
+  (libraries
+    histogram
+    core
+    core_unix
+    core_unix.sys_unix
+    stdio))

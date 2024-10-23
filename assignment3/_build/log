@@ -1,0 +1,22 @@
+# dune test
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/davidwang/.cache/dune/db
+# Workspace root:
+# "/Users/davidwang/Library/CloudStorage/OneDrive-Personal/Class
+# Folders/601.629 (Functional Programming)/FPSE_Wubble/assignment3"
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/davidwang/.opam/5.2.0/bin/ocamlc.opt -config > /var/folders/_5/4pfbkbcn4410kj_19615m6pr0000gn/T/dune_058e8d_output
+$ (cd _build/default/test && ./tests.exe)
+> ...........
+> Ran: 11 tests in: 0.12 seconds.
+> OK

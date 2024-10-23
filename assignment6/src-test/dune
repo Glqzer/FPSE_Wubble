@@ -9,8 +9,11 @@
   (name tests)
   (modules tests)
   (libraries
+    base_quickcheck
     core
     ounit2
     ngrams_tests
+    ngramtype
+    utils
   )
   (deps (file ../src/bin/ngrams.exe) (glob_files_rec ../test/**)))

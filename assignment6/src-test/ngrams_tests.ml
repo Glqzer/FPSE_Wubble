@@ -28,7 +28,7 @@ let assert_string_output (message: string) (expected : string list) (cseq : char
     (List.mem ~equal:String.equal expected actual)
 
 let exec_dir = "../src/bin/" (* note that cwd is _build/default/src-test *)
-let test_dir = "../../../test/" (* exit until default -> _build -> assignment 6, then enter test *)
+let test_dir = "../test/" (* exit until default -> _build -> assignment 6, then enter test *)
 
 let exec_name = "ngrams.exe"
 let exec_path = exec_dir ^ exec_name
@@ -60,7 +60,7 @@ let test_sample
 
 (*
   Example run with these arguments:
-  $ dune exec -- ./src/ngrams.exe 10 ./test/ddse.txt --sample 26 path explosion is a major shortcoming with symbolic execution
+  $ dune exec -- ./src/bin/ngrams.exe 10 ./test/ddse.txt --sample 26 path explosion is a major shortcoming with symbolic execution
   path explosion is a major shortcoming with symbolic execution a vast number of the explored paths never get near the target program point in forward runs
 *)
 let sample_test1 =
