@@ -5,7 +5,9 @@
     src/bin/dune
     src/lib/dune
     src/lib/ngramtype.ml
+    src/lib/ngramtype.mli
     src/lib/utils.ml
+    src/lib/utils.mli
     src-test/dune
     src-test/ngrams_tests.ml
     src-test/tests.ml
