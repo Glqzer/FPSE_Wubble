@@ -1,3 +1,5 @@
+(* fpse_monad.ml *)
+
 (* Define the Basic module type *)
 module type Basic = sig
   type ('a, 'b) m
@@ -23,27 +25,28 @@ module type S = sig
   end
 end
 
-(* Implement the Make functor *)
+(* Define the M functor type *)
+module type M = functor (X : Basic) -> S with type ('a, 'b) m = ('a, 'b) X.m
+
+(* Define the Make functor *)
 module Make (X : Basic) : S with type ('a, 'b) m = ('a, 'b) X.m = struct
-  include X
+  type ('a, 'b) m = ('a, 'b) X.m
 
-  let map ma ~f = 
-    bind ma ~f:(fun a -> return (f a))
+  let return = X.return
 
-  let compose f g x = 
-    bind (f x) ~f:g
+  let bind m ~f = X.bind m ~f
 
-  let (>>=) ma f = 
-    bind ma ~f
+  let map m ~f = bind m ~f:(fun a -> return (f a))
 
-  let (>>|) ma f = 
-    map ma ~f
+  let compose f g x = bind (f x) ~f:g
 
-  let (>=>) f g x = 
-    compose f g x
+  let (>>=) m f = bind m ~f
 
-  let join mma = 
-    bind mma ~f:(fun ma -> ma)
+  let (>>|) m f = map m ~f
+
+  let (>=>) f g x = compose f g x
+
+  let join m = bind m ~f:(fun x -> x)
 
   module Let_syntax = struct
     let bind = bind

@@ -1,29 +1,29 @@
-module Basic = struct
-  type ('a, 'b) m = ('a, 'b list) State_monad.m
+(* stack_monad.ml *)
 
-  let return = State_monad.return
-  let bind = State_monad.bind
-end
+(* Include the necessary module *)
+include Fpse_monad.Make(State_monad)
 
-include Fpse_monad.Make(Basic)
+(* Define the type for the stack monad *)
+type ('a, 'b) m = ('a, 'b list) State_monad.m
 
-let push x = 
-  State_monad.bind State_monad.read ~f:(fun stack ->
-    State_monad.return () (x :: stack)
-  )
+(* Function to push a value onto the stack *)
+let push (x : 'a) : (unit, 'a) m =
+  fun stack ->
+    ((), x :: stack)  (* Returns unit and the new stack with x on top *)
 
-let pop =
-  State_monad.bind State_monad.read ~f:(fun stack ->
+(* Function to pop a value from the stack *)
+let pop : ('a, 'a) m =
+  fun stack ->
     match stack with
-    | [] -> failwith "Stack is empty"  (* You may want a safer option for handling this error *)
-    | x :: xs -> State_monad.return x xs
-  )
+    | [] -> failwith "pop: stack is empty"  (* Raise an exception if the stack is empty *)
+    | x :: xs -> (x, xs)  (* Return the top value and the new stack without the top value *)
 
-let is_empty =
-  State_monad.bind State_monad.read ~f:(fun stack ->
-    State_monad.return (stack = [])
-  )
+(* Function to run the monadic stack operation *)
+let run (x : ('a, 'b) m) : 'a =
+  let (result, _) = x [] in  (* Start with an empty stack *)
+  result  (* Return the result, discarding the final stack *)
 
-let run m =
-  let (result, _) = m [] in
-  result
+(* Function to check if the stack is empty *)
+let is_empty : (bool, 'a) m =
+  fun stack ->
+    (List.length stack = 0, stack)  (* Return true if the stack is empty, along with the stack *)
