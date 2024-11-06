@@ -1,8 +1,8 @@
 (*
   FPSE Assignment 7
 
-  Name                  : 
-  List of Collaborators :
+  Name                  : David Wang
+  List of Collaborators : None
 
   In this file you use the `Stack_monad` module to refactor some stateful OCaml code.
 
@@ -52,6 +52,10 @@ let _ = assert (run simple_stack && run simple_stack')
 
   The program checks if a string `s` has all parentheses '(' and ')' balanced. It uses the
   `Core.Stack` module, which is an actual mutable stack, not a monadic encoding of one.
+
+  This is true if and only if the string [s] is a string of opening '(' and
+    closing ')' parentheses that are balanced.
+    This implementation returns [false] if we catch an exception from an illegal pop.
 *)
 
 (** [are_balanced_mutable s] is true if and only if the string [s] is a string of opening '(' and
@@ -87,10 +91,31 @@ let are_balanced_mutable (s : string) : bool =
 *)
 
 let parse (c : char) : (bool, char) Stack_monad.m =
-  failwith "FILL THIS IN"
+  try
+    match c with
+    | '(' -> 
+      let%map () = push '(' in
+      true 
+    | ')' -> 
+      let%bind not_empty = is_empty >>| not in       
+      if not_empty then 
+        let%map _ = pop in 
+        true 
+      else 
+        return false   
+    | _ -> return true                 
+  with _ -> return false
+;;
+
 
 let main_monadic (s : string) : (bool, char) Stack_monad.m =
-  failwith "FILL THIS IN"
+  let%bind parsed = String.fold s ~init:(return true) ~f:(fun aux ch ->
+    let%bind aux' = aux in
+    if aux' then parse ch else return false)
+  in 
+  let%map is_empty = is_empty in
+  parsed && is_empty
+;;
 
 let are_balanced_monadic (s : string) : bool =
   try run @@ main_monadic s with _ -> false
