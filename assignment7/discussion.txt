@@ -12,6 +12,12 @@ respectively. Show your work so you can get partial credit.
 
 Write your answer below.
 
+(a)
+Creating the stack is O(1), and running String.fold on the string is O(n), since each character is processed in O(1). So, the overall complexity is O(n).
+
+(b)
+Creating the monad is also O(1), and running String.fold on the input string is once again O(n). The bind operations of the monad is O(1), so the overall complexity is also O(n).
+
 
 
 

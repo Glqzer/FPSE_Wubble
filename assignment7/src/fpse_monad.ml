@@ -25,10 +25,8 @@ module type S = sig
   end
 end
 
-(* Define the M functor type *)
 module type M = functor (X : Basic) -> S with type ('a, 'b) m = ('a, 'b) X.m
 
-(* Define the Make functor *)
 module Make (X : Basic) : S with type ('a, 'b) m = ('a, 'b) X.m = struct
   type ('a, 'b) m = ('a, 'b) X.m
 
